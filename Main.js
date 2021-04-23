@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 var bodyParser = require('body-parser');
 
-const uri = process.env.ATLAS_URI;
+const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true

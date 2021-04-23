@@ -9,9 +9,9 @@ const mongoose = require('mongoose');
 const path = require('path');
 var bodyParser = require('body-parser');
 
+mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-
-mongoose.connect('mongodb://localhost/my_rest_api', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/my_rest_api', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB...'))

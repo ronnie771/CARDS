@@ -9,8 +9,8 @@ const mongoose = require('mongoose');
 const path = require('path');
 var bodyParser = require('body-parser');
 
-
-mongoose.connect(process.env.MONGODB_URL, {
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB...'))

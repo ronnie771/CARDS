@@ -10,7 +10,7 @@ const path = require('path');
 var bodyParser = require('body-parser');
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/my_rest_api', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/my_rest_api', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB...'))

@@ -17,7 +17,10 @@ router.delete("/:id", auth, async (req, res) => {
   });
   if (!card)
     return res.status(404).send("The card with the given ID was not found.");
+<<<<<<< HEAD
     
+=======
+>>>>>>> 16182a238b358a807b149acd618ac6f1f3dd8f3d
   res.send(card);
 });
 

@@ -2,7 +2,7 @@
   "name": "my-rest-api",
   "version": "1.0.0",
   "engines" : {
-    "node" : "14.16.1"
+    "node" : "14.17.0"
   },
   "description": "",
   "main": "index.js",

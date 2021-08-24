@@ -31,13 +31,13 @@ app.use(cors())
 
 
 
-  app.use(express.static(path.join(__dirname, 'real-app/public')));
+  app.use(express.static(path.join(__dirname, 'build')));
 
   
  
 
 app.get('/', (req, res) => {
-  res.send(path.join(__dirname, '..', 'real-app/public/index.html'))
+  res.send(path.join(__dirname, 'build', 'index.html'))
 });
  
 

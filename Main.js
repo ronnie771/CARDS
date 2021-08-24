@@ -10,12 +10,14 @@ const path = require('path');
 var bodyParser = require('body-parser');
 
 
-const uri = "mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/my_rest_api?retryWrites=true&w=majority"
+const MONGODB_URI = "mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/my_rest_api?retryWrites=true&w=majority"
 
 
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+mongoose.connect(
+ 
+    process.env.MONGODB_URI,
+  {useNewUrlParser: true}
+  
 }).then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...'));
   
@@ -47,6 +49,6 @@ app.use('/cards', cards);
 
 
 
-const port = 3000 ;
+const port = process.env.port ;
 http.listen(port, () => console.log(`Listening on port ${port}...`));
 

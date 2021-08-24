@@ -39,11 +39,7 @@ router.patch('/cards', auth, async (req, res) => {
 });
 
 router.get('/me', auth, async (req, res) => {
-<<<<<<< HEAD
   const user = await User.findById(req.user._id).select('password');
-=======
-  const user = await User.findById(req.user._id).select('-password');
->>>>>>> 16182a238b358a807b149acd618ac6f1f3dd8f3d
   res.send(user);
 });
 

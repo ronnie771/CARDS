@@ -1,34 +1,21 @@
 {
   "name": "my-rest-api",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "engines": {
-    "node": "14.16.1"
-=======
   "engines" : {
     "node" : "14.16.1"
->>>>>>> 16182a238b358a807b149acd618ac6f1f3dd8f3d
   },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "start": "node Main",
     "dev": "nodemon ./main.js"
-=======
-    "start": "node Main"
->>>>>>> 16182a238b358a807b149acd618ac6f1f3dd8f3d
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "@hapi/joi": "^17.1.1",
-=======
-    "@hapi/joi": "^17.1.0",
->>>>>>> 16182a238b358a807b149acd618ac6f1f3dd8f3d
     "bcrypt": "^5.0.1",
     "config": "^3.2.5",
     "cors": "^2.8.5",

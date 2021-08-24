@@ -33,13 +33,13 @@ app.use(cors())
 
 
 
-  app.use(express.static(path.join(__dirname, 'build')));
+  app.use(express.static(path.join(__dirname, './build')));
 
   
  
 
 app.get('/', (req, res) => {
-  res.send(path.join(__dirname, 'build', 'index.html'))
+  res.send(path.join(__dirname, 'build', './build/index.html'))
 });
  
 
@@ -49,6 +49,6 @@ app.use('/cards', cards);
 
 
 
-const port = (process.env.port || 3000);
+const port = process.env.port || 3000;
 http.listen(port, () => console.log(`Listening on port ${port}...`));
 

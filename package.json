@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Main.js",
+    "start": "node Main",
     "dev": "nodemon ./main.js"
   },
   "keywords": [],

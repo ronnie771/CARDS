@@ -10,9 +10,9 @@ const path = require('path');
 var bodyParser = require('body-parser');
 
 
-const MONGODB_URI = "mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/my_rest_api?retryWrites=true&w=majority"
+const uri = process.env.MONGODB_URI || "mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/my_rest_api?retryWrites=true&w=majority"
 
-const uri = process.env.MONGODB_URI;
+
 mongoose.connect(
     uri,
   {useNewUrlParser: true}

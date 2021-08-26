@@ -12,13 +12,12 @@ var bodyParser = require('body-parser');
 
 const MONGODB_URI = "mongodb+srv://atlasron:ronm56@cluster0.dmdmk.mongodb.net/my_rest_api?retryWrites=true&w=majority"
 
-
+const uri = process.env.MONGODB_URI;
 mongoose.connect(
- 
-    process.env.MONGODB_URI,
+    uri,
   {useNewUrlParser: true}
   
-}).then(() => console.log('Connected to MongoDB...'))
+).then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...'));
   
 

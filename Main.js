@@ -13,7 +13,7 @@ var bodyParser = require('body-parser');
 
 
 mongoose.connect(
-  MONGODB_URI,
+  process.env.MONGODB_URI,
   {useNewUrlParser: true}
   
 ).then(() => console.log('Connected to MongoDB...'))

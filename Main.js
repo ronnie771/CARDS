@@ -27,7 +27,7 @@ app.use(express.urlencoded({
 
 
 
-app.use(cors())
+
 
 
 

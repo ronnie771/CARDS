@@ -34,19 +34,17 @@ app.use(cors())
   app.use(express.static(path.join(__dirname, 'build')));
 
   
- 
-
 app.get('/', (req, res) => {
   res.send(path.join(__dirname, 'build', 'index.html'))
 });
  
 
-app.use('/', users);
+app.use('/users', users);
 app.use('/auth', auth);
 app.use('/cards', cards);
 
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 http.listen(port, () => console.log(`Listening on port ${port}...`));
 

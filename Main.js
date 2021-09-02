@@ -31,7 +31,7 @@ app.use(cors())
 
 
 
-  app.use(express.static(path.join(__dirname, 'build')));
+  app.use(express.static(path.join(__dirname, 'my-rest-api/build')));
 
   
 app.get('/', (req, res) => {

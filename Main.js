@@ -31,13 +31,12 @@ app.use(cors())
 
 
 
-  app.use(express.static('build'));
+  app.use(express.static(path.join(__dirname, 'build')));
 
   
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+  res.send(path.join(__dirname, 'build', 'index.html'))
 });
-
  
 
 app.use('/users', users);

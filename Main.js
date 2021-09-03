@@ -30,11 +30,11 @@ app.use(express.urlencoded({
 app.use(cors())
 
 
-
+if(process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, 'build')));
-
+}
   
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.send(path.join(__dirname, 'build', 'index.html'))
 });
  

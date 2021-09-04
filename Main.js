@@ -34,8 +34,10 @@ app.use(cors())
   app.use(express.static(path.join(__dirname, 'build')));
 
   
+ 
+
 app.get('/', (req, res) => {
-  res.send(path.join(__dirname, 'build', 'index.html'))
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
 });
  
 
@@ -45,6 +47,6 @@ app.use('/cards', cards);
 
 
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 http.listen(port, () => console.log(`Listening on port ${port}...`));
 

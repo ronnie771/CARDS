@@ -20,6 +20,8 @@ mongoose.connect(
   .catch(err => console.error('Could not connect to MongoDB...'));
   
 
+
+
   app.use(express.json());
 app.use(express.urlencoded({
     extended: false
@@ -36,7 +38,7 @@ if (process.env.NODE_ENV === 'production'){
 
  
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build' ,'index.html'))
 }); 
 }

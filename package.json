@@ -2,7 +2,8 @@
   "name": "my-rest-api",
   "version": "1.0.0",
   "engines": {
-    "node": "14.17.0"
+    "node": "14.17.0",
+    "npm" : "7.22.0"
   },
   "description": "",
   "main": "main.js",
@@ -11,7 +12,6 @@
     "start": "node main.js",
     "dev": "node main.js",
     "heroku-postbuild": "cd my-rest-api && npm install && npm run build"
-
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "mongodb": "^4.1.1",
-    "mongoose": "^6.0.3",
+    "mongoose": "^6.0.4",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "serve": "^12.0.0"

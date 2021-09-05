@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js",
     "dev": "node main.js",
-    "heroku-postbuild": "cd my-rest-api && npm install && npm run build"
+    "heroku-postbuild": " npm install && npm run build"
   },
   "keywords": [],
   "author": "",

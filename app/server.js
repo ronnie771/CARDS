@@ -1,4 +1,4 @@
-const users = require('/app/routes/users.js');
+const users = require('./routes/users');
 const auth = require('./routes/auth');
 const cards = require('./routes/cards');
 const cors = require('cors');
@@ -43,9 +43,10 @@ app.get('/', (req, res) => {
 }
 
 
-app.use('/app/users', users);
-app.use('/app/auth', auth);
-app.use('/app/cards', cards);
+
+app.use('/api/sers', users);
+app.use('/api/auth', auth);
+app.use('/api/cards', cards);
 
 
 

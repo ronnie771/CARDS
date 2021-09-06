@@ -1,1 +1,1 @@
-web:run npm start
+web:node my-rest-api/main.js

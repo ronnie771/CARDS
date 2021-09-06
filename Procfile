@@ -1,1 +1,1 @@
-web:node my-rest-api/main.js
+web:node main.js

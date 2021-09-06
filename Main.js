@@ -38,7 +38,7 @@ app.use(cors())
  
 
 app.get('/', (req, res) => {
-  res.send(path.join(__dirname, 'build' ,'index.html'))
+  res.send('lol')
 }); 
 
 

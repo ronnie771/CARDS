@@ -38,7 +38,7 @@ app.use(cors())
  
 
 app.get('/', (req, res) => {
-  res.send('lol')
+  res.sendFile('lol')
 }); 
 
 

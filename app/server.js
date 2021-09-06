@@ -43,9 +43,9 @@ app.get('/', (req, res) => {
 }
 
 
-app.use('/users', users);
-app.use('/auth', auth);
-app.use('/cards', cards);
+app.use('/app/users', users);
+app.use('/app/auth', auth);
+app.use('/app/cards', cards);
 
 
 

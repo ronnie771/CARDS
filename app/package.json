@@ -1,15 +1,15 @@
 {
-  "name": "my-rest-api",
+  "name": "app",
   "version": "1.0.0",
   "engines": {
     "node": "14.17.0",
-    "npm" : "7.22.0"
+    "npm": "7.22.0"
   },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":  "node server.js",
+    "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": [],

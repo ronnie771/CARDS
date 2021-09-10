@@ -31,21 +31,21 @@ app.use(express.urlencoded({
 
 app.use(cors())
 
-  app.use(express.static(path.join(__dirname, 'build')));
+  app.use(express.static(path.join(__dirname, './build')));
 
 
  
 
 app.get('/', (req, res) => {
-  res.send(path.join(__dirname, 'build' ,'index.html'))
+  res.send(path.join(__dirname, './build' ,'index.html'))
 }); 
 
 
 
 
-app.use('/api/users', users);
-app.use('/api/auth', auth);
-app.use('/api/cards', cards);
+app.use('/users', users);
+app.use('/auth', auth);
+app.use('/cards', cards);
 
 
 
